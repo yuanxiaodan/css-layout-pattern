@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="stylesheet" href="../../css/lib/alike.css"/>
+        <link rel="stylesheet" href="../../css/format.css"/>
+	</head>
+	<body> 
+       <!-- one-column-horizontal-center-5 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-horizontal-center-5-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-horizontal-center-5"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.one-column-horizontal-center-5-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">position</span>:<span class="css-value">relative</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-horizontal-center-5</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-property">position</span>:<span class="css-value">absolute</span>;
+                    <span class="css-property">left</span>:<span class="css-value">50%</span>;
+                    <span class="css-property">margin-left</span>:<span class="css-value">-100px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-horizontal-center-5-wrap{
+                height: 50px;
+			    position:relative;
+            }
+            .one-column-horizontal-center-5{
+                width:200px;
+                height:50px;
+                background: #ccc;
+                position:absolute;
+                left: 50%;
+                margin-left: -100px;
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-horizontal-center-5-wrap">
+                    <div class="one-column-horizontal-center-5"></div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：居中元素不会对其他的产生影响,兼容性好。
+            缺点：需要已知内容宽度。
+            </p>
+        </div>
+	</body>
+</html>

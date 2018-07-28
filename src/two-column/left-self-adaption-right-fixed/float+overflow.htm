@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="stylesheet" href="../../css/lib/alike.css"/>
+        <link rel="stylesheet" href="../../css/format.css"/>
+	</head>
+	<body>
+        <!-- two-columns-left-fixed-right-self-adaption-1 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="two-columns-left-fixed-right-self-adaption-1-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="two-columns-left-fixed-right-self-adaption-1-right"&gt;&lt;/div&gt;</span>
+                    <span class="html-child">&lt;div class="two-columns-left-fixed-right-self-adaption-1-left"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.two-columns-left-fixed-right-self-adaption-1-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">overflow</span>:<span class="css-value">hidden</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.two-columns-left-fixed-right-self-adaption-1-left</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#333</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">overflow</span>:<span class="css-value">hidden</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.two-columns-left-fixed-right-self-adaption-1-right</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">float</span>:<span class="css-value">right</span>; /* attention */
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .two-columns-left-fixed-right-self-adaption-1-wrap{
+                overflow:hidden; /* attention */
+            }
+            .two-columns-left-fixed-right-self-adaption-1-left{
+                background:#333;
+                height:50px;
+                overflow: hidden; /* attention  或者把属性设置成auto都可*/
+            }
+            .two-columns-left-fixed-right-self-adaption-1-right{
+                background:#ccc;
+                float:right; /* attention */
+                height:50px;
+                width:200px;
+            }
+            </style>
+            <div class="demo">
+                <div class="two-columns-left-fixed-right-self-adaption-1-wrap">
+                    <div class="two-columns-left-fixed-right-self-adaption-1-right"></div>
+                    <div class="two-columns-left-fixed-right-self-adaption-1-left"></div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：易于理解，兼容性较强。
+            缺点：不易于理解，右列自适应容器设置overflow:hidden;，使其转变成BFC元素。
+            </p>
+        </div>       
+    </body>
+</html>

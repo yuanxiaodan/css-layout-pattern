@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="stylesheet" href="../../css/lib/alike.css"/>
+        <link rel="stylesheet" href="../../css/format.css"/>
+	</head>
+	<body>
+        <!-- one-column-horizontal-center-2 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-horizontal-center-2-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-horizontal-center-2"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.one-column-horizontal-center-2-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">font-size</span>:<span class="css-value">0</span>; /* attention */
+                    <span class="css-property">text-align</span>:<span class="css-value">center</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-horizontal-center-2</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">display</span>:<span class="css-value">inline-block</span>; /* attention */
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-horizontal-center-2-wrap{
+                font-size:0; /* attention */
+			    text-align:center; /* attention */
+            }
+            .one-column-horizontal-center-2{
+                background:#ccc;
+                display:inline-block; /* attention */
+                height:50px;
+                width:200px;
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-horizontal-center-2-wrap">
+                    <div class="one-column-horizontal-center-2"></div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：易于理解，不需要已知内容宽度。
+            缺点：依赖父容器的text-align:center;，而且还需要处理inline-block元素的空格导致的间距问题和兼容问题。
+            适用场景：容器内为inline-block或inline的元素。
+            </p>
+        </div>
+	</body>
+</html>

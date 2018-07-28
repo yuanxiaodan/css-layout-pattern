@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="stylesheet" href="../../css/lib/alike.css"/>
+        <link rel="stylesheet" href="../../css/format.css"/>
+	</head>
+	<body>
+        <!-- one-column-horizontal-vertical-center -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-horizontal-verticle-center-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-horizontal-vertical-center"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.one-column-horizontal-verticle-center-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">height</span>:<span class="css-value">100px</span>;
+                    <span class="css-property">line-height</span>:<span class="css-value">100px</span>;/* attention */
+                    <span class="css-property">text-align</span>:<span class="css-value">center</span>;/* attention */
+                    <span class="css-property">font-size</span>:<span class="css-value">0</span>;/* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-horizontal-vertical-center</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-property">display</span>:<span class="css-value">inline-block</span>;/* attention */
+                    <span class="css-property">vertical-align</span>:<span class="css-value">middle</span>;/* attention */
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-horizontal-verticle-center-wrap{
+                height:100px;
+                line-height: 100px;
+                font-size:0; /* attention */
+			    text-align:center; /* attention */
+            }
+            .one-column-horizontal-vertical-center{
+                background:#ccc;
+                height:50px;
+                width:200px;
+                display:inline-block;
+                vertical-align:middle; /* attention */
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-horizontal-verticle-center-wrap">
+                    <div class="one-column-horizontal-vertical-center"></div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：兼容性比较强，易于理解。
+            缺点：font-size: 0;解决inline元素间的空白间隙。
+            适用场景：已知容器内元素高度。
+            </p>
+        </div>
+    </body>
+</html>

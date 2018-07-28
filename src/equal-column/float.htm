@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/lib/alike.css" />
+    <link rel="stylesheet" href="../css/format.css" />
+</head>
+
+<body>
+    <!-- equal-columns -->
+    <div class="wrap">
+        <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="equal-columns"&gt;</span>
+                    <span class="html-child">&lt;div class="column"&gt;&lt;/div&gt;</span>
+                    <span class="html-child">&lt;div class="column"&gt;&lt;/div&gt;</span>
+                    <span class="html-child">&lt;div class="column"&gt;&lt;/div&gt;</span>
+                    <span class="html-child">&lt;div class="column"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.equal-columns</span><span class="css-brace">{</span>
+                    <span class="css-property">overflow</span>:<span class="css-value">hidden</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.column</span><span class="css-brace">{</span>
+                    <span class="css-property">float</span>:<span class="css-value">left</span>; /* attention */
+                    <span class="css-property">width</span>:<span class="css-value">25%</span>;
+                    <span class="css-property">padding-left</span>:<span class="css-value">20px</span>;   
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;   
+                    <span class="css-property">box-sizing</span>:<span class="css-value">border-box</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+        <span class="title">Demo:</span>
+        <style>
+            .equal-columns {
+                overflow: hidden;
+            }
+
+            .column {
+                float: left;
+                width: 25%;
+                height: 50px;
+                padding-left: 20px;
+                background:#ccc;
+                box-sizing: border-box;
+            }
+        </style>
+        <div class="demo">
+            <div class="equal-columns">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+        </div>
+        <p class="desc">
+            优点：兼容性较好.
+            缺点：ie6 ie7百分比兼容存在一定问题.
+        </p>
+    </div>
+</body>
+
+</html>

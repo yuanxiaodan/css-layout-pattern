@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="stylesheet" href="../css/lib/alike.css"/>
+        <link rel="stylesheet" href="../css/format.css"/>
+	</head>
+	<body>
+        <!-- equal-columns -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="equal-columns"&gt;</span>
+                    <span class="html-child">&lt;div class="column"&gt;&lt;/div&gt;</span>
+                    <span class="html-child">&lt;div class="column"&gt;&lt;/div&gt;</span>
+                    <span class="html-child">&lt;div class="column"&gt;&lt;/div&gt;</span>
+                    <span class="html-child">&lt;div class="column"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.equal-columns</span><span class="css-brace">{</span>
+                    <span class="css-property">display</span>:<span class="css-value">flex</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.column</span><span class="css-brace">{</span>
+                    <span class="css-property">flex</span>:<span class="css-value">1</span>; /* attention */
+                    <span class="css-property">background</span>:<span class="css-value">#333</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;   
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.tolumn+.column</span><span class="css-brace">{</span>
+                    <span class="css-property">margin-left</span>:<span class="css-value">20px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .equal-columns{
+                display:flex; /* attention */
+            }
+            .column{
+                background: #3333;
+                flex:1;
+                height: 50px;
+            }
+            .column+.column{
+                margin-left: 20px;
+            }
+            </style>
+            <div class="demo">
+                <div class="equal-columns">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：代码量少，与块数无关。
+            缺点：flex属于css3内容，兼容性存在一定问题。
+            </p>
+        </div>
+    </body>
+</html>

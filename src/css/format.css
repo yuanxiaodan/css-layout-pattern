@@ -6,7 +6,6 @@ body{
     background:rgba(0,0,0,.9);
 }
 .wrap{
-    border-bottom:1px dashed #fff;
     overflow:hidden;
 }
 .wrap pre{
@@ -19,7 +18,8 @@ body{
     color:#fff;
 }
 .wrap code .html,.wrap code .html-child,.wrap code .html-child-child{
-    color:#ffff62;
+    color:#ff5319;
+    font-size: 14px;
 }
 .wrap code .html-child{
     margin-left:28px;
@@ -31,17 +31,18 @@ body{
     color:#4effff;
 }
 .wrap code .css-class-tag{
-    color:#ffff62;
+    color:#ff5319;
 }
 .wrap code .css-brace{
-    color:#ffff62;
+    color:#ff5319;
 }
 .wrap code .css-property{
     margin-left:28px;
-    color:#68ff60;
+    color:#42b983;
 }
 .wrap code .css-value{
     color:#fd9da0;
+    margin-left: 5px;
 }
 .wrap .title,.wrap .demo{
     background:#eee;

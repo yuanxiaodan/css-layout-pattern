@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="stylesheet" href="../../css/lib/alike.css"/>
+        <link rel="stylesheet" href="../../css/format.css"/>
+	</head>
+	<body>
+        <!-- one-column-vertical-center-4 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-vertical-center-4-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-vertical-center-4"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                   <span class="css-class">.one-column-vertical-center-4-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">overflow</span>:<span class="css-value">hidden</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-vertical-center-4</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">margin</span>:<span class="css-value">25px 0</span>; /* attention */
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-vertical-center-4-wrap{
+			    overflow:hidden; /* attention */
+            }
+            .one-column-vertical-center-4{
+			    margin:25px 0; /* attention */
+                background:#ccc;
+                height:50px;
+                width:200px;
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-vertical-center-4-wrap">
+                    <div class="one-column-vertical-center-4"></div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：兼容性较强。
+            缺点：不易于理解，依赖于父容器的overflow:hidden;，把父容器设置成BFC元素，根据其特性（子元素的margin值，会隔开自身与父元素）。
+            </p>
+        </div>
+    </body>
+</html>

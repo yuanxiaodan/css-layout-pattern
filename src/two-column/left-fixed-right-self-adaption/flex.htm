@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="stylesheet" href="../../css/lib/alike.css"/>
+        <link rel="stylesheet" href="../../css/format.css"/>
+	</head>
+	<body>
+        <!-- two-columns-left-fixed-right-self-adaption-3 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="two-columns-left-fixed-right-self-adaption-3-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="two-columns-left-fixed-right-self-adaption-3-left"&gt;&lt;/div&gt;</span>
+                    <span class="html-child">&lt;div class="two-columns-left-fixed-right-self-adaption-3-right"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.two-columns-left-fixed-right-self-adaption-3-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">display</span>:<span class="css-value">flex</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.two-columns-left-fixed-right-self-adaption-3-left</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.two-columns-left-fixed-right-self-adaption-2-right</span><span class="css-brace">{</span>
+                    <span class="css-property">flex</span>:<span class="css-value">1</span>; /* attention */
+                    <span class="css-property">background</span>:<span class="css-value">#333</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .two-columns-left-fixed-right-self-adaption-3-wrap{
+                display:flex; /* attention */
+            }
+            .two-columns-left-fixed-right-self-adaption-3-left{
+                background:#ccc;
+                height:50px;
+                width:200px; /* attention */
+            }
+            .two-columns-left-fixed-right-self-adaption-3-right{
+                flex: 1;
+                background:#333;
+                height:50px;
+            }
+            </style>
+            <div class="demo">
+                <div class="two-columns-left-fixed-right-self-adaption-3-wrap">
+                    <div class="two-columns-left-fixed-right-self-adaption-3-left"></div>
+                    <div class="two-columns-left-fixed-right-self-adaption-3-right"></div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：flex很强大，适用于移动端布局。
+            缺点：flex属于css3内容，兼容性存在一定问题。
+            </p>
+        </div>
+    </body>
+</html>

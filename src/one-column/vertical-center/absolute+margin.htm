@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="stylesheet" href="../../css/lib/alike.css"/>
+        <link rel="stylesheet" href="../../css/format.css"/>
+	</head>
+	<body>
+        <!-- one-column-vertical-center-2 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-vertical-center-2-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-vertical-center-2"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.one-column-vertical-center-2-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">height</span>:<span class="css-value">100px</span>;
+                    <span class="css-property">position</span>:<span class="css-value">relative</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-vertical-center-2</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">margin-top</span>:<span class="css-value">-25px</span>; /* attention */
+                    <span class="css-property">position</span>:<span class="css-value">absolute</span>; /* attention */
+                    <span class="css-property">top</span>:<span class="css-value">50%</span>; /* attention */
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-vertical-center-2-wrap{
+                height:100px;
+			    position:relative; /* attention */
+            }
+            .one-column-vertical-center-2{
+                background:#ccc;
+                height:50px;
+			    margin-top:-25px; /* attention */
+			    position:absolute; /* attention */
+			    top:50%; /* attention */
+                width:200px;
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-vertical-center-2-wrap">
+                    <div class="one-column-vertical-center-2"></div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：兼容性比较强，易于理解。
+            缺点：依赖于父元素的position:relative;。
+            适用场景：已知容器内元素高度。
+            </p>
+        </div>
+    </body>
+</html>

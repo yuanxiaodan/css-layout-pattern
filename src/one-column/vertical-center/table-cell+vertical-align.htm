@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="stylesheet" href="../../css/lib/alike.css"/>
+        <link rel="stylesheet" href="../../css/format.css"/>
+	</head>
+	<body>
+        <!-- one-column-vertical-center-3 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-vertical-center-3-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-vertical-center-3"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                   <span class="css-class">.one-column-vertical-center-3-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">display</span>:<span class="css-value">table-cell</span>; /* attention */
+                    <span class="css-property">height</span>:<span class="css-value">100px</span>;
+                    <span class="css-property">vertical-align</span>:<span class="css-value">middle</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-vertical-center-3</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-vertical-center-3-wrap{
+			    display:table-cell; /* attention */
+                height:100px;
+			    vertical-align:middle; /* attention */
+            }
+            .one-column-vertical-center-3{
+                background:#ccc;
+                height:50px;
+                width:200px;
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-vertical-center-3-wrap">
+                    <div class="one-column-vertical-center-3"></div>
+                </div>
+            </div>
+            <p class="desc">
+            优点：兼容性较好，ie8以上均支持。
+            适用场景：有辅助容器的环境。
+            </p>
+        </div>
+    </body>
+</html>

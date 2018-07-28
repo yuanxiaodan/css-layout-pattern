@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="stylesheet" href="../../css/lib/alike.css"/>
+        <link rel="stylesheet" href="../../css/format.css"/>
+	</head>
+	<body>
+        <!-- one-column-vertical-center-1 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="one-column-vertical-center-1-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="one-column-vertical-center-1"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                   <span class="css-class">.one-column-vertical-center-1-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">height</span>:<span class="css-value">100px</span>;
+                    <span class="css-property">line-height</span>:<span class="css-value">100px</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.one-column-vertical-center-1</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">display</span>:<span class="css-value">inline-block</span>; /* attention */
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-property">vertical-align</span>:<span class="css-value">middle</span>; /* attention */
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .one-column-vertical-center-1-wrap{
+                height:100px;
+                line-height:100px; /* attention */
+            }
+            .one-column-vertical-center-1{
+                background:#ccc;
+                display:inline-block; /* attention */
+                height:50px;
+                width:200px;
+                vertical-align:middle; /* attention */
+            }
+            </style>
+            <div class="demo">
+                <div class="one-column-vertical-center-1-wrap">
+                    <div class="one-column-vertical-center-1"></div>
+                </div>
+            </div>
+            <p class="desc">
+            缺点：不易于理解。
+            适用场景：容器内容为inline或inline-block的元素。
+            </p>
+        </div>
+    </body>
+</html>
