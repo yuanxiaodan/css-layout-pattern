@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="stylesheet" href="../../css/lib/alike.css"/>
+        <link rel="stylesheet" href="../../css/format.css"/>
+	</head>
+	<body>
+        <!-- three-columns-left-right-fixed-center-self-adaption-5 -->
+        <div class="wrap">
+            <pre>
+                <code>
+                    &lt;!-- html --&gt;
+                    <span class="html">&lt;div class="three-columns-left-right-self-adaption-center-fixed-2-wrap"&gt;</span>
+                    <span class="html-child">&lt;div class="three-columns-left-right-self-adaption-center-fixed-2-left"&gt;&lt;/div&gt;</span>
+                    <span class="html-child">&lt;div class="three-columns-left-right-self-adaption-center-fixed-2-main"&gt;&lt;/div&gt;</span>
+                    <span class="html-child">&lt;div class="three-columns-left-right-self-adaption-center-fixed-2-right"&gt;&lt;/div&gt;</span>
+                    <span class="html">&lt;/div&gt;</span>
+                    &lt;!-- css --&gt;
+                    <span class="css-class">.three-columns-left-right-self-adaption-center-fixed-2-wrap</span><span class="css-brace">{</span>
+                    <span class="css-property">position</span>:<span class="css-value">relative</span>; /* attention */
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.three-columns-left-right-self-adaption-center-fixed-2-left</span><span class="css-brace">{</span>
+                    <span class="css-property">position</span>:<span class="css-value">absolute</span>; /* attention */
+                    <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                    <span class="css-property">top</span>:<span class="css-value">0</span>;
+                    <span class="css-property">left</span>:<span class="css-value">0</span>;
+                    <span class="css-property">right</span>:<span class="css-value">50%</span>;/* attention */
+                    <span class="css-property">margin-right</span>:<span class="css-value">100px</span>;/* attention */
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.three-columns-left-right-self-adaption-center-fixed-2-main</span><span class="css-brace">{</span>
+                    <span class="css-property">background</span>:<span class="css-value">#333</span>;
+                    <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-property">width</span>:<span class="css-value">200px</span>;
+                    <span class="css-property">margin</span>:<span class="css-value">0 auto</span>;
+                    <span class="css-brace">}</span>
+                    <span class="css-class">.three-columns-left-right-self-adaption-center-fixed-2-right</span><span class="css-brace">{</span>
+                        <span class="css-property">position</span>:<span class="css-value">absolute</span>; /* attention */
+                        <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                        <span class="css-property">top</span>:<span class="css-value">0</span>;
+                        <span class="css-property">left</span>:<span class="css-value">50%</span>;/* attention */
+                        <span class="css-property">right</span>:<span class="css-value">0</span>;
+                        <span class="css-property">margin-left</span>:<span class="css-value">100px</span>;/* attention */
+                        <span class="css-property">background</span>:<span class="css-value">#ccc</span>;
+                        <span class="css-property">height</span>:<span class="css-value">50px</span>;
+                    <span class="css-brace">}</span>
+                </code>
+            </pre>
+            <span class="title">Demo:</span>
+            <style>
+            .three-columns-left-right-self-adaption-center-fixed-2-wrap{
+                position: relative;
+            }
+            .three-columns-left-right-self-adaption-center-fixed-2-left{
+                background:#ccc;
+                position:absolute; /* core */
+                top:0;
+                left:0;
+                right:50%; /* core */
+                height:50px;
+                margin-right:100px; /* core */
+            }
+            .three-columns-left-right-self-adaption-center-fixed-2-main{
+                background:#333;
+                margin:0 auto;
+                height:50px;
+                width:200px;
+            }
+            .three-columns-left-right-self-adaption-center-fixed-2-right{
+                background:#ccc;
+                position:absolute; /* core */
+                top:0;
+                left:50%;  /* core */
+                right:0;
+                height:50px;
+                margin-left:100px; /* core */
+            }
+            </style>
+            <div class="demo">
+                <div class="three-columns-left-right-self-adaption-center-fixed-2-wrap">
+                    <div class="three-columns-left-right-self-adaption-center-fixed-2-left"></div>
+                    <div class="three-columns-left-right-self-adaption-center-fixed-2-main"></div>
+                    <div class="three-columns-left-right-self-adaption-center-fixed-2-right"></div>
+                </div>
+            </div>
+            <p class="desc">
+                优点：易于理解。
+                缺点：兼容性好。
+            </p>
+        </div>
+    </body>
+</html>
